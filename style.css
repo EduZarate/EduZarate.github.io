@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor-exterior {
+  width: 100%;
+  background-color: #f3f5fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  position: relative;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  max-width: 1400px;
+  background-color: #f3f5fc;
+}
+
+.logo {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  width: 120px;
+}
+
+form textarea {
+  position: absolute;
+  width: 680px;
+  height: 350px;
+  top: 168px;
+  left: 240px;
+  font-family: Inter;
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: none;
+  background: #f3f5fc;
+  resize: none;
+  color: #0a3871;
+}
+
+textarea::placeholder {
+  color: #0a3871;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.rectangle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 400px;
+  right: 40px;
+  bottom: 40px;
+  top: 40px;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  z-index: 1;
+}
+
+.frame5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 336px;
+  height: 122px;
+  left: 1032px;
+  top: 619px;
+  z-index: 20;
+}
+
+.frame5 p:first-child {
+  width: 336px;
+  height: 58px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  /* or 29px */
+
+  text-align: center;
+
+  /* Gray/gray-500 */
+
+  color: #343a40;
+}
+
+.frame5 p:nth-child(2) {
+  width: 336px;
+  height: 48px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  text-align: center;
+
+  /* Gray/gray-400 */
+
+  color: #495057;
+}
+
+#after-encript {
+  display: none;
+  top: 0px;
+  position: absolute;
+  padding: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  /* or 36px */
+
+  /* Gray/gray-400 */
+
+  color: #495057;
+}
+
+#copy-button {
+  box-sizing: border-box;
+  z-index: 100;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+
+  position: relative;
+  top: 355px;
+
+  /* Dark blue/dark-blue-300 */
+
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+
+  display: none;
+}
+
+#copy-button p {
+  width: 288px;
+  height: 19px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  /* Dark blue/dark-blue-300 */
+
+  color: #0a3871;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.frame1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 229px;
+  height: 18px;
+  left: 240px;
+  bottom: 160px;
+}
+
+.circle {
+  /* bi:exclamation-circle-fill */
+
+  width: 16px;
+  height: 16px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.frame1 img {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.frame1 p {
+  width: 205px;
+  height: 18px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  /* identical to box height, or 18px */
+
+  /* Gray/gray-400 */
+
+  color: #495057;
+
+  opacity: 0.8;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* -- Frame 3 -- */
+
+.frame3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  bottom: 80px;
+  left: 240px;
+}
+
+.frame3 button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 8px;
+
+  width: 328px;
+  height: 67px;
+
+  /* Dark blue/dark-blue-300 */
+
+  background: #0a3871;
+  border-radius: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.frame3 button:hover {
+  cursor: pointer;
+  background: #041d3c;
+  transition: 300ms;
+}
+
+.frame3 button:nth-child(2) {
+  background: #d8dfe8;
+  /* Dark blue/dark-blue-300 */
+
+  border: 1px solid #0a3871;
+  border-radius: 24px;
+}
+
+.frame3 button p {
+  width: 280px;
+  height: 19px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  /* White */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+#boton-desencriptar {
+  color: #0a3871;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  height: 250px;
+  width: 100%;
+  max-width: 1400px;
+  background-color: #0a3871;
+  z-index: 10;
+  box-shadow: 0 -5px 10px #0a3871;
+}
+
+footer {
+  width: 100%;
+  background-color: #f3f5fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a3871;
+  box-shadow: 0 -5px 10px #0a3871;
+}
+
+.contenedor-footer-interno {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+}
+
+.contenedor-footer-interno img {
+  width: 40%;
+}
+
+footer p {
+  font-size: 12px;
+  height: 10px;
+  color: #d8dfe8;
+  margin-top: 50px;
+}
+
+.networks {
+  display: inline-flex;
+  background: #d8dfe8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin: 0 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.networks i {
+  font-size: 20px;
+  color: #0a3871;
+}
+
+.networks {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-exterior {
+    width: 100%;
+    background-color: #f3f5fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor-interior {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #texto-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  form textarea {
+    position: unset;
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .botonera {
+    min-height: 200px;
+    width: 90%;
+    margin-top: 150px;
+  }
+
+  .botones {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .frame1 {
+    position: unset;
+    margin: 0 250px 10px 0;
+  }
+
+  .circle img {
+    position: unset;
+  }
+
+  .frame3 {
+    display: flex;
+    position: unset;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .frame3 button {
+    width: 80%;
+    max-width: 332px;
+    justify-content: center;
+  }
+
+  .frame3 button p {
+    width: auto;
+  }
+
+  .frame5 {
+    height: 0%;
+  }
+
+  .rectangle {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+    position: unset;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  #contenido-frame {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+  }
+
+  #after-encript {
+    position: unset;
+    padding: 20px;
+  }
+
+  #copy-button {
+    position: unset;
+  }
+
+  .frame5 p:first-child {
+    font-size: 22px;
+    height: 20px;
+  }
+
+  .frame5 p:nth-child(2) {
+    font-size: 15px;
+  }
+
+  .munieco {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .frame5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: auto;
+  }
+
+  .frame5 p:first-child {
+    padding: 5px;
+    height: auto;
+  }
+
+  .frame3 {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 90%;
+  }
+
+  .frame3 button {
+    width: 150%;
+  }
+
+  .frame1 {
+    margin: 10px;
+  }
+
+  #copy-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  #copy-button p {
+    width: auto;
+  }
+}

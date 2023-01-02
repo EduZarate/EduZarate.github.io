@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/44cddda503.js" crossorigin="anonymous"></script>
+    <title>Encriptador (Desafío ONE)</title>
+</head>
+
+<body>
+
+    <div class="contenedor-exterior">
+        <div class="contenedor">
+            <div class="contenedor-interior">
+                <div class="logo">
+                    <img src="/assets/Vector.svg" alt="Logo página.">
+                </div>
+
+                <div class="botonera">
+                    <form target="#button-encriptar">
+                        <textarea id="texto-area" placeholder="Ingrese el texto aquí"></textarea>
+                    </form>
+                </div>
+
+
+                <div class="botones">
+
+                    <div class="frame1">
+                        <div class="circle">
+                            <img src="/assets/bi_exclamation-circle-fill.svg" alt="Exclamación">
+                        </div>
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+
+                    <div class="frame3">
+                        <button id="button-encriptar">
+                            <p>Encriptar</p>
+                        </button>
+                        <button onclick="desencriptar()">
+                            <p id="boton-desencriptar">Desencriptar</p>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="rectangle">
+
+                    <div id="after-encript">
+                        <p id="texto-after-encript"></p>
+                    </div>
+
+                    <div id="contenido-frame">
+
+                        <div class="munieco">
+                            <img src="/assets/Muñeco.svg" alt="Joven arrodillado mirando un diamante con una lupa">
+                        </div>
+                        <div class="frame5">
+                            <p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                        </div>
+                    </div>
+                    <button id="copy-button">
+                        <p>Copiar</p>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="izq">
+                <div class="networks"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="networks"><i class="fa-brands fa-facebook"></i></div>
+            </div>
+            <div class="contenedor-footer-interno">
+                <img src="/assets/EZ LOGO.png" alt="">
+                <p>&copy Copyright 2022. All rights reserved</p>
+            </div>
+            <div class="der">
+                <div class="networks"><i class="fa-brands fa-instagram"></i></div>
+                <div class="networks"><i class="fa-brands fa-linkedin"></i></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
