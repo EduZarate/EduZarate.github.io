@@ -65,7 +65,7 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 400px;
+  width: 25%;
   right: 40px;
   bottom: 40px;
   top: 40px;
@@ -75,23 +75,37 @@ textarea:focus {
   z-index: 1;
 }
 
+#contenido-frame {
+  width: 95%;
+}
+
+.munieco {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.munieco img {
+  object-fit: cover;
+  max-width: 90%;
+}
+
 .frame5 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
   gap: 16px;
+  margin: 0 auto;
 
-  width: 336px;
-  height: 122px;
-  left: 1032px;
-  top: 619px;
+  width: 90%;
   z-index: 20;
 }
 
 .frame5 p:first-child {
-  width: 336px;
-  height: 58px;
+  width: 95%;
+  height: 50%;
 
   font-family: "Inter";
   font-style: normal;
@@ -108,7 +122,7 @@ textarea:focus {
 }
 
 .frame5 p:nth-child(2) {
-  width: 336px;
+  width: 95%;
   height: 48px;
 
   font-family: "Inter";
@@ -254,6 +268,7 @@ textarea:focus {
   align-items: flex-start;
   padding: 0px;
   gap: 24px;
+  width: 30%;
 
   position: absolute;
   bottom: 80px;
@@ -264,10 +279,11 @@ textarea:focus {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
   padding: 24px;
   gap: 8px;
 
-  width: 328px;
+  width: 80%;
   height: 67px;
 
   /* Dark blue/dark-blue-300 */
@@ -334,6 +350,14 @@ textarea:focus {
   background-color: #0a3871;
   z-index: 10;
   box-shadow: 0 -5px 10px #0a3871;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -475,7 +499,6 @@ footer p {
 
   .rectangle {
     display: flex;
-    flex-direction: column;
     width: 90%;
     padding: 10px;
     position: unset;
@@ -501,7 +524,7 @@ footer p {
 
   .frame5 p:first-child {
     font-size: 22px;
-    height: 20px;
+    height: -1px;
   }
 
   .frame5 p:nth-child(2) {
@@ -514,6 +537,10 @@ footer p {
 }
 
 @media screen and (max-width: 375px) {
+  .rectangle {
+    display: flex;
+    flex-direction: column;
+  }
   .frame5 {
     display: flex;
     justify-content: center;
@@ -525,6 +552,10 @@ footer p {
   .frame5 p:first-child {
     padding: 5px;
     height: auto;
+  }
+
+  .frame5 p:nth-child(2) {
+    margin-bottom: 20px;
   }
 
   .frame3 {
